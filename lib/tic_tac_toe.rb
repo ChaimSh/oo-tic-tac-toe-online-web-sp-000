@@ -104,4 +104,41 @@ else
 end
 end
 
+def over?
+  if won? || full? || draw?
+    true
+
+  else
+    false
+  end
+end
+
+
+def winner
+  index = won?
+  if index == false
+    return nil
+  else
+    if @board[index[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end
