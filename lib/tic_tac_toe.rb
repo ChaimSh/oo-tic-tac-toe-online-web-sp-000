@@ -53,4 +53,15 @@ end
 counter
 end
 
+def current_player
+if turn_count % 2 == 0
+   "X"
+else #turn_count % 2 != 0
+   "O"
+  end
+end
+
+
+
+
 end
